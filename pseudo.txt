@@ -1,0 +1,29 @@
+NOTE:Sign in page
+1. Sign in on welcome page
+2. Navigate to User page "/:id"
+  get id from array email
+
+3. USER HOME PAGE #1
+
+  Loop through array,
+    where id == :id(url)
+    print User name, number, etc.
+
+4. CONTACT DRIVER #2
+
+Create driver array select random to simulate availability
+
+5. APPOINTMENT page
+
+6. VEHICLE PAGE /:id/vehicles
+
+  loop Users.vehicles
+    where id = :id
+
+      Click on vehicle picture
+      reveal other statistics
+
+          Add vehicle
+          make new vehicle Class
+
+7. DEALER PAGE /:id/dealers
