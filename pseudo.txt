@@ -9,6 +9,8 @@ NOTE:Sign in page
     where id == :id(url)
     print User name, number, etc.
 
+  Schedule appointment button redirects to CONTACT DRIVER
+
 4. CONTACT DRIVER #2
 
 Create driver array select random to simulate availability

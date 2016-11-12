@@ -10,6 +10,13 @@ app.get("/", (req, res) => {
   res.render("index", {user: user})
 })
 
+app.get("/contactDriver", (req, res) => {
+  var drivers = seedData.Drivers
+  var randDriver = drivers[Math.floor(Math.random() * drivers.length)]
+  // var rando = Math.floor(Math.random() * drivers.length)
+  res.render("driver", {randDriver: randDriver})
+})
+
 app.get("/:id", (req, res) => {
   var customers = seedData.Users
   for (i = 0; i<customers.length; i++){
@@ -20,9 +27,7 @@ app.get("/:id", (req, res) => {
   res.render("user", {name: name})
 })
 
-//loop Users
-//id match params id
-//print info on page
+
 
 
 app.set("view engine", "hbs")
