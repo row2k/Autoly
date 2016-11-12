@@ -3,7 +3,7 @@ NOTE:Sign in page
 2. Navigate to User page "/:id"
   get id from array email
 
-3. USER HOME PAGE #1
+3. USER HOME PAGE #1 #done
 
   Loop through array,
     where id == :id(url)
@@ -11,7 +11,7 @@ NOTE:Sign in page
 
   Schedule appointment button redirects to CONTACT DRIVER
 
-4. CONTACT DRIVER #2
+4. CONTACT DRIVER #2 #done
 
 Create driver array select random to simulate availability
 
