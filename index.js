@@ -5,27 +5,21 @@ var seedData = require("./seed.js")
 
 app.use(express.static("public"))
 
-app.get("/", (req, res) => {
+app.get("/confirmation", (req, res) => {
   var user = seedData.Users[0]
   console.log(user.vehicle)
-  res.render("index", {user: user})
+  res.render("confirmation", {user: user})
 })
 
-app.get("/contactDriver", (req, res) => {
+app.get("/status", (req, res) => {
   var drivers = seedData.Drivers
   var randDriver = drivers[Math.floor(Math.random() * drivers.length)]
   console.log(randDriver.img_url)
   // var rando = Math.floor(Math.random() * drivers.length)
-  res.render("driver", {randDriver: randDriver})
+  res.render("status", {randDriver: randDriver})
 })
 
-app.get("/scheduling", (req, res) => {
-  var customers = seedData.Users
-  res.render("scheduling", {})
-  
-})
-
-//Displays user profiles and their cars
+//HOME PAGE Displays car and user profile
 app.get("/:id", (req, res) => {
   var customers = seedData.Users
   for (i = 0; i<customers.length; i++){
@@ -40,7 +34,7 @@ app.get("/:id", (req, res) => {
       var carState = customers[i].vehicle[p].plateState
     }
   }
-  res.render("user", {name: name, carMake:carMake, carModel:carModel,
+  res.render("home", {name: name, carMake:carMake, carModel:carModel,
     carColor:carColor, carPlate:carPlate, carState})
   })
 
