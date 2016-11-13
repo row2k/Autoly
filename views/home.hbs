@@ -6,4 +6,15 @@ Hi {{name}}
 {{carPlate}}
 {{carState}}
 
+<div id="notification" style="display: none;">
+  <span class="dismiss"><a title="dismiss this notification">x</a></span>
+</div>
+</div>
 <img src="{{carPhoto}}" alt="" />
+<script>
+setTimeout(function (){ 
+$("#notification").fadeIn("slow").append('your message')}, 3000 )
+$(".dismiss").click(function(){
+       $("#notification").fadeOut("slow");
+});
+</script>
