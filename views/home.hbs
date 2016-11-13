@@ -1,9 +1,28 @@
-Hi {{name}}
 
-{{carMake}}
+
+
+<div class="column">
+  <h3 id = "intro">Hi {{name}}</h3>
+
+<div id="notification" style="display: none;">
+  <span class="dismiss"><a title="dismiss this notification">x</a></span>
+</div>
+
+<a href="/confirmation"><img id ="carPic" src="{{carPhoto}}" alt="" / ></a>
+
+
+</div>
+<script>
+setTimeout(function (){
+$("#notification").fadeIn("slow").append('Your driver is on the way. Eta 5 minutes')}, 3000 )
+$(".dismiss").click(function(){
+       $("#notification").fadeOut("slow");
+});
+</script>
+
+
+<!-- {{carMake}}
 {{carModel}}
 {{carColor}}
 {{carPlate}}
-{{carState}}
-
-<img src="{{carPhoto}}" alt="" />
+{{carState}} -->

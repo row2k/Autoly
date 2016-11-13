@@ -6,8 +6,50 @@
     <script src = "./seed.js"></script>
   </head>
   <body>
-    <h3>{{user.firstName}}</h3>
-    <h3>{{user.lastName}}</h3>
-    <a href="/contactDriver">Schedule a Pickup</a>
+    <div class="column">
+
+
+    <p>Price Estimate: ${{priceEstimate}}</p>
+    <p>Scheduled Pick up at: </p>
+
+    <form>
+      Address
+      <select id="addressList">
+        <option>Home: {{homeAddress}}</option>
+        <option>Work: {{workAddress}}</option>
+      </select>
+      <a class = "sub" href="#">+</a>
+    </form>
+
+    <div class="arriveDateWrapper fieldWrapper">
+        Date: <input class="arriveDate" name="arriveDate" type="date" placeholder="What date?" />
+    </div>
+
+    <form>
+      <label for="timeBox">Time</label>
+      <input type="time" name="time">
+    </form>
+
+    <form>
+      <label for="checkbox">return to address</label>
+      <input type="checkbox" name="checkbox" value="">
+    </form>
+
+    <div class="arriveWrapper">
+
+            <div class="clear"></div>
+        </div>
+
+
+    <a href="/checkout">
+      <button type="button" value = "confirm">Confirm</button>
+    </a>
+
+    <a href="/1">
+      <button type="button" value = "confirm">Back</button>
+    </a>
+
+
+    </div>
   </body>
 </html>
