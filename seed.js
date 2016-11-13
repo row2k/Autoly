@@ -48,7 +48,7 @@ var seed = function(){
   const Khoi = new User("Khoi", "Le", "123 H Street NW", "229 North Arlington", 1234567891, 2)
 
   const Accord = new Vehicle("Honda", "Accord", "Red","JXH-7345", "VA", "http://www.egmcartech.com/wp-content/uploads/2012/09/2013hondaaccord-04.jpg")
-  const Altima = new Vehicle("Nissan", "Altima", "White","VRG-6789", "DC", "http://www.egmcartech.com/wp-content/uploads/2012/09/2013hondaaccord-04.jpg")
+  const Altima = new Vehicle("Nissan", "Altima", "White","VRG-6789", "DC", "http://www.nissanusa.com/dam/nissan/vehicles/cars/altima/2017/overview/accessories/2016-nissan-altima-rear-decklid-spoiler-large.jpg")
 
   Kevin.newCar(Accord)
   Kevin.newCar(Altima)
