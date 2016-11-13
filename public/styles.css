@@ -1,7 +1,20 @@
-body{
-  /*background-color: #A3E3FE;*/
+*{
+  margin: 0;
 }
 
+html{
+  height: 100%;
+}
+
+body {
+    background: #fff;
+    width: 100%;
+    min-height: calc(100% - 50px);
+    text-align: center;
+    color: #112A4F;
+    background: linear-gradient(white, #89162B);
+
+}
 img{
   height: 200px;
   width: 200px;
@@ -9,7 +22,77 @@ img{
 
 a{
   text-decoration: none;
+  color: white;
 }
+
+a:hover{
+  color:#89162B;
+}
+
+footer{
+ background-color: #122B4F;
+ position: absolute;
+ left: 0;
+ bottom: 0;
+ height: 50px;
+ width: 100%;
+ overflow:hidden;
+}
+
+header{
+  background-color: #122B4F;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;;
+}
+#logo{
+  height: 100px;
+  width: 100px;
+}
+
+#carPic{
+  margin: 50px 0px 50px 0px;
+}
+
+#intro{
+  margin: 50px 0px 0px 0px
+}
+
+#title{
+  color: white;
+}
+
+.button {
+    background-color: orange; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+.column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.column> form{
+  margin: 50px 0px 50px 0px
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 
 /* Checkout Page CSS */
 .checkoutPage{
@@ -111,7 +194,7 @@ a{
   font-size:14px;
   font-weight:bold;
   color:white;
-  background-color:#FF7800;
+  background-color:#DB1F2B;
   padding:5px;
 }
 #notification span.dismiss {
