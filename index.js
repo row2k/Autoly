@@ -20,11 +20,9 @@ app.get("/contactDriver", (req, res) => {
 })
 
 app.get("/scheduling", (req, res) => {
-  var drivers = seedData.Drivers
-  var randDriver = drivers[Math.floor(Math.random() * drivers.length)]
-  console.log(randDriver.img_url)
-  // var rando = Math.floor(Math.random() * drivers.length)
-  res.render("driver", {randDriver: randDriver})
+  var customers = seedData.Users
+  res.render("scheduling", {})
+  
 })
 
 //Displays user profiles and their cars
