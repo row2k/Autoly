@@ -6,9 +6,12 @@ var seedData = require("./seed.js")
 app.use(express.static("public"))
 
 app.get("/confirmation", (req, res) => {
+  var priceEstimate = Math.floor((Math.random() * (30 + 17)) + 17);
+  console.log(priceEstimate)
   var user = seedData.Users[0]
-  console.log(user.vehicle)
-  res.render("confirmation", {user: user})
+  var homeAddress = user.homeAddress
+  console.log(homeAddress)
+  res.render("confirmation", {user: user, priceEstimate:priceEstimate, homeAddress:homeAddress })
 })
 
 app.get("/status", (req, res) => {
