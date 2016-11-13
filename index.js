@@ -19,6 +19,11 @@ app.get("/status", (req, res) => {
   res.render("status", {randDriver: randDriver})
 })
 
+app.get("/checkout", (req, res) => {
+
+  res.render("checkout")
+})
+
 //HOME PAGE Displays car and user profile
 app.get("/:id", (req, res) => {
   var customers = seedData.Users
