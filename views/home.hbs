@@ -6,8 +6,19 @@
 {{carPlate}}
 {{carState}}
 
-<img src="{{carPhoto}}" alt="" />
+<div id="notification" style="display: none;">
+  <span class="dismiss"><a title="dismiss this notification">x</a></span>
+</div>
 
+<img src="{{carPhoto}}" alt="" />
 <a href="/confirmation">
   <input type="button" value="confirm">
 </a>
+
+<script>
+setTimeout(function (){
+$("#notification").fadeIn("slow").append('your message')}, 3000 )
+$(".dismiss").click(function(){
+       $("#notification").fadeOut("slow");
+});
+</script>
