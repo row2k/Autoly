@@ -6,13 +6,38 @@
     <script src = "./seed.js"></script>
   </head>
   <body>
-    ((Insert reminder for 30 minutes before pickup))
-    <p>Price Estimate: ${{priceEstimate}}</p>
-    <p>Scheduled Pick up at {{homeAddress}}((insert time and drop menu for addresses from prev page))</p>
 
-    <label for="checkbox">return to address</label>
-    <p>((show return address))</p>
-    <input type="checkbox" name="checkbox" value="">
+    <p>Price Estimate: ${{priceEstimate}}</p>
+    <p>Scheduled Pick up at: </p>
+
+    <form>
+      Address
+      <select id="addressList">
+        <option>Home: {{homeAddress}}</option>
+        <option>Work: {{workAddress}}</option>
+      </select>
+      <a class = "sub" href="#">+</a>
+    </form>
+
+    <div class="arriveDateWrapper fieldWrapper">
+        Date: <input class="arriveDate" name="arriveDate" type="date" placeholder="What date?" />
+    </div>
+
+    <form>
+      <label for="timeBox">Time</label>
+      <input type="time" name="time">
+    </form>
+
+    <form>
+      <label for="checkbox">return to address</label>
+      <input type="checkbox" name="checkbox" value="">
+    </form>
+
+    <div class="arriveWrapper">
+
+            <div class="clear"></div>
+        </div>
+
 
     <a href="/checkout">
       <button type="button" value = "confirm">Confirm</button>
